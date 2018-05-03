@@ -21,7 +21,7 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
       }
     })
     .state('booklist', {
-      url: '/{bookType: [0-9]{1, 4}}',
+      url: '/{bookType:[0-9]{1,4}}',
       views: {
         '': {
           templateUrl: '../tpls/booklist.html'
@@ -35,12 +35,12 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
       }
     })
     .state('bookdetail', {
-      url: '/bookdetail',
+      url: '/bookdetail/:bookId',
       templateUrl: '../tpls/bookdetail.html'
     })
     .state('addbook', {
       url: '/addbook',
-      templateUrl: '../tpls/addbook.html'
+      templateUrl: '../tpls/addbookform.html'
     });
     $urlRouterProvider.otherwise('/index');
 });

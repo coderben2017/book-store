@@ -1,1 +1,1 @@
-var services = angular.module('Services', []);
+var servicesModule = angular.module('Services', []);
